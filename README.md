@@ -20,6 +20,11 @@ To read more about displaCy-ent.js, check out the [blog post](https://explosion.
 This demo is implemented in [Jade (aka Pug)](https://www.jade-lang.org), an extensible templating language that compiles to HTML, and is built or served by [Harp](https://harpjs.com). To serve it locally on [http://localhost:9000](http://localhost:9000), simply run:
 
 ```bash
+# use sudo may cause npm complain because of permission.
+# see https://github.com/sass/node-sass/issues/1098
+# also https://github.com/sass/node-sass/blob/master/TROUBLESHOOTING.md#cannot-find-module-rootinstalljs
+# if you must however, add --unsafe-perm flag.
+# sudo npm install --global --unsafe-perm harp
 sudo npm install --global harp
 git clone https://github.com/explosion/displacy-ent
 cd displacy-ent
